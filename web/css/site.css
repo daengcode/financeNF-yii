@@ -7,8 +7,9 @@ body {
   border: none;
   background-color: #3c8dbc;
 }
-.navbar-inverse .navbar-nav > li > a {
-  color: #ffffff;
+
+.navbar-brand {
+  font-size: 16px;
 }
 
 .navbar-inverse .navbar-nav > .active > a {
@@ -19,8 +20,14 @@ body {
   background-color: #417999;
 }
 
-.navbar-inverse .navbar-brand {
+.navbar-inverse .navbar-brand,
+.navbar-inverse .btn-link,
+.navbar-inverse .navbar-nav > li > a {
   color: #ffffff;
+}
+
+.navbar-inverse .btn-link:hover {
+  background-color: #417999;
 }
 
 .container .breadcrumb a,
