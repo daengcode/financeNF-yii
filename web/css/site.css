@@ -3,6 +3,7 @@ body {
   height: 100%;
 }
 
+/* Star custom*/
 .navbar {
   border: none;
   background-color: #3c8dbc;
@@ -47,6 +48,42 @@ body {
   background-color: #ecf0f5;
 }
 
+.jumbotron {
+  padding: 45px 60px;
+  color: #ffffff;
+  text-align: center;
+  background-color: #00c0ef;
+}
+
+.jumbotron h2 {
+  font-size: 47px;
+}
+
+.card-body a {
+  text-decoration: none;
+}
+
+.card .card-body .thumbnail {
+  color: #3c8dbc;
+  padding: 10px;
+  margin-bottom: 20px;
+  text-align: center;
+  border-radius: 4px;
+  border: 1px solid #ddd;
+  background-color: white;
+}
+
+.card-body .caption h3 {
+  font-size: 16px;
+  margin-top: 10px;
+  margin-bottom: 0px;
+}
+
+.card .card-body a .thumbnail:hover {
+  background-color: #f5f5f5;
+}
+/* End custom */
+
 .wrap > .container {
   padding: 70px 15px 20px;
 }
@@ -56,33 +93,6 @@ body {
   background-color: #f5f5f5;
   border-top: 1px solid #ddd;
   padding-top: 20px;
-}
-
-.jumbotron {
-  padding: 45px 60px;
-  color: #ffffff;
-  /* font-family: "Nunito"; */
-  text-align: center;
-  background-color: #00c0ef;
-}
-
-.jumbotron h2 {
-  font-size: 47px;
-}
-
-/* .jumbotron .btn {
-  font-size: 10px;
-  padding: 14px 24px;
-} */
-
-.row .card {
-  display: block;
-  padding: 10px;
-  margin-bottom: 20px;
-  text-align: center;
-  border-radius: 4px;
-  border: 1px solid #ddd;
-  background-color: white;
 }
 
 .not-set {
