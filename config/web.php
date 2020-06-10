@@ -50,7 +50,10 @@ $config = [
             'rules' => [],
         ],
     ],
-    'params' => $params,
+    'params' => [
+        $params,
+        'icon-framework' => \kartik\icons\Icon::FAS,
+    ]
 ];
 
 if (YII_ENV_DEV) {
