@@ -75,6 +75,16 @@ body {
   padding: 14px 24px;
 } */
 
+.row .card {
+  display: block;
+  padding: 10px;
+  margin-bottom: 20px;
+  text-align: center;
+  border-radius: 4px;
+  border: 1px solid #ddd;
+  background-color: white;
+}
+
 .not-set {
   color: #c55;
   font-style: italic;
