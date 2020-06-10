@@ -30,7 +30,7 @@ $this->params['breadcrumbs'][] = $this->title;
 
     <?= $form->field($model, 'username')->textInput(['autofocus' => true, 'autocomplete' => 'off']) ?>
 
-    <?= $form->field($model, 'password')->passwordInput()->textInput(['autocomplete' => 'off']) ?>
+    <?= $form->field($model, 'password')->passwordInput() ?>
 
     <?= $form->field($model, 'rememberMe')->checkbox([
         'template' => "<div class=\"col-sm-offset-5 col-sm-5\">{input} {label}</div>\n<div class=\"col-sm-8\">{error}</div>",
