@@ -42,13 +42,11 @@ Icon::map($this)
         echo Nav::widget([
             'options' => ['class' => 'navbar-nav navbar-right'],
             'items' => [
-                //         ['label' => 'Home', 'url' => ['/site/index']],
-                //         ['label' => 'About', 'url' => ['/site/about']],
-                //         ['label' => 'Contact', 'url' => ['/site/contact']],
+                ['label' => 'Hi, ' . Yii::$app->user->identity->username],
                 Yii::$app->user->isGuest ? (['label' => '']) : ('<li>'
                     . Html::beginForm(['/site/logout'], 'post')
                     . Html::submitButton(
-                        'Logout (' . Yii::$app->user->identity->username . ')',
+                        'Logout',
                         ['class' => 'btn btn-link logout']
                     )
                     . Html::endForm()
