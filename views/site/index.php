@@ -11,8 +11,9 @@ Icon::map($this);
 <div class="site-index">
 
     <div class="jumbotron">
-        <?= Icon::show('user-tie', ['class' => 'fa-3x']) ?><h2>Selamat datang, <?= Yii::$app->user->identity->username ?></h2>
-        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolorem, veritatis amet.</p>
+        <!-- <i class="fa fa-user-tie fa-3x"></i> -->
+        <h2>Selamat datang, <?= Yii::$app->user->identity->username ?></h2>
+        <p>Pilihlah menu-menu dibawah untuk melihat aktivitas pembayaran Mahasiswa.</p>
     </div>
 
     <div class="body-content">

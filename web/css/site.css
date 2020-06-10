@@ -49,14 +49,14 @@ body {
 }
 
 .jumbotron {
-  padding: 45px 60px;
+  padding: 50px 60px;
   color: #ffffff;
   text-align: center;
-  background-color: #00c0ef;
+  background-color: #00c0ef !important;
 }
 
 .jumbotron h2 {
-  font-size: 47px;
+  font-size: 36px;
 }
 
 .card-body a {

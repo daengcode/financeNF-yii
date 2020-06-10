@@ -3,14 +3,16 @@
 /* @var $this \yii\web\View */
 /* @var $content string */
 
-use app\widgets\Alert;
 use yii\helpers\Html;
+use app\widgets\Alert;
+use kartik\icons\Icon;
 use yii\bootstrap\Nav;
+use app\assets\AppAsset;
 use yii\bootstrap\NavBar;
 use yii\widgets\Breadcrumbs;
-use app\assets\AppAsset;
 
 AppAsset::register($this);
+Icon::map($this)
 ?>
 <?php $this->beginPage() ?>
 <!DOCTYPE html>
@@ -67,7 +69,10 @@ AppAsset::register($this);
 
     <footer class="footer">
         <div class="container">
-            <p class="pull-left"> <b>Copyright © 2020</b> <a href="http://nurulfikri.ac.id" target="_blank">Sekolah Tinggi Teknologi Terpadu Nurul Fikri</a>. All rights reserved.</p>
+            <p class="pull-left"> <strong>Copyright © 2020 <a href="http://nurulfikri.ac.id" target="_blank">Sekolah Tinggi Teknologi Terpadu Nurul Fikri</a></strong>. All rights reserved.</p>
+            <div class="pull-right">
+                <p>Made with <i class="fa fa-heart" title="love" style="color: red;"></i> & <i class="fa fa-coffee" title="coffee"></i> by <a href="https://www.nurulfikri.ac.id">Group Three LnM</a></p>
+            </div>
         </div>
     </footer>
 
