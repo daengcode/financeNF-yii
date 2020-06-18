@@ -18,7 +18,7 @@ Icon::map($this);
 
     <div class="body-content">
         <div class="row">
-            <div class="col-md-4">
+            <!-- <div class="col-md-2">
                 <div class="card">
                     <div class="card-body">
                         <a href="#" data-toggle="tooltip" title="Registrasi Pembayaran Mahasiswa">
@@ -32,7 +32,7 @@ Icon::map($this);
                     </div>
                 </div>
             </div>
-            <div class="col-md-4">
+            <div class="col-md-2">
                 <div class="card">
                     <div class="card-body">
                         <a href="#" data-toggle="tooltip" title="Laporan Pembayaran Mahasiswa">
@@ -46,7 +46,7 @@ Icon::map($this);
                     </div>
                 </div>
             </div>
-            <div class="col-md-4">
+            <div class="col-md-2">
                 <div class="card">
                     <div class="card-body">
                         <a href="#" data-toggle="tooltip" title="Rekap Pembayaran Mahasiswa">
@@ -59,6 +59,26 @@ Icon::map($this);
                         </a>
                     </div>
                 </div>
+            </div> -->
+            <div class="col-md-2">
+                <a href="#" title="Laporan Pembayaran Mahasiswa" data-toggle="tooltip" data-original-title="Laporan Pembayaran Mahasiswa">
+                    <div class="thumbnail" style="text-align:center; padding-top:10px;">
+                        <i class="fa fa-file-signature fa-4x"></i>
+                        <div class="caption" style="padding:8px 0 0;">
+                            <h4 style="font-size:16px;">Laporan Pembaya...</h4>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="col-md-2">
+                <a href="#" title="Rekap Pembayaran Mahasiswa" data-toggle="tooltip" data-original-title="Rekap Pembayaran Mahasiswa">
+                    <div class="thumbnail" style="text-align:center; padding-top:10px;">
+                        <i class="fa fa-file-invoice-dollar fa-4x"></i>
+                        <div class="caption" style="padding:8px 0 0;">
+                            <h4 style="font-size:16px;">Rekap Pembaya...</h4>
+                        </div>
+                    </div>
+                </a>
             </div>
         </div>
     </div>

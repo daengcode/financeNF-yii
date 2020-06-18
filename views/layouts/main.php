@@ -9,6 +9,7 @@ use kartik\icons\Icon;
 use yii\bootstrap\Nav;
 use app\assets\AppAsset;
 use yii\bootstrap\NavBar;
+use yii\bootstrap\Dropdown;
 use yii\widgets\Breadcrumbs;
 
 AppAsset::register($this);
@@ -31,20 +32,53 @@ Icon::map($this)
     <?php $this->beginBody() ?>
 
     <div class="wrap">
+
         <?php
         NavBar::begin([
-            'brandLabel' => "<b>KEUANGAN</b> STT-NF",
+            'brandLabel' => "<b>AIS</b> STT-NF",
             'brandUrl' => Yii::$app->homeUrl,
             'options' => [
                 'class' => 'navbar-inverse navbar-fixed-top navbar',
             ],
         ]);
+        if (\Yii::$app->user->isGuest) {
+            echo Nav::widget([
+                'options' => ['class' => 'navbar-nav nav'],
+                'items' => [['label' => '']]
+            ]);
+        } elseif (\Yii::$app->user->identity->username != 'admin') {
+            echo Nav::widget([
+                'options' => ['class' => 'navbar-nav nav'],
+                'items' => [
+                    [
+                        'label' => 'Mahasiswa',
+                        'items' => [
+                            ['label' => 'Level 1 - Dropdown A', 'url' => '#'],
+                            ['label' => 'Level 1 - Dropdown B', 'url' => '#'],
+                        ],
+                    ],
+                ]
+            ]);
+        } else {
+            echo Nav::widget([
+                'options' => ['class' => 'navbar-nav nav'],
+                'items' => [
+                    [
+                        'label' => 'Keuangan',
+                        'items' => [
+                            ['label' => 'Level 1 - Dropdown A', 'url' => '#'],
+                            ['label' => 'Level 1 - Dropdown B', 'url' => '#'],
+                        ],
+                    ],
+                ]
+            ]);
+        }
+
         echo Nav::widget([
             'options' => ['class' => 'navbar-nav navbar-right'],
             'items' => [
-                ['label' => 'Hi, ' . Yii::$app->user->identity->username],
                 Yii::$app->user->isGuest ? (['label' => '']) : ('<li>'
-                    . Html::beginForm(['/site/logout'], 'post')
+                    . Html::beginForm(['/user/logout'], 'post')
                     . Html::submitButton(
                         'Logout',
                         ['class' => 'btn btn-link logout']
